@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FAQ - ICT Loket Noordkade</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .faq-item{border-bottom:1px solid rgba(15,23,42,0.04);padding:0.8rem 0}
+    .faq-question{cursor:pointer;font-weight:700}
+    .faq-answer{display:none;padding-top:0.5rem;color:var(--muted)}
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="header-content">
+      <div class="logo">
+        <img src="Assets/ChatGPT Image 15 jan 2026, 12_26_12.png" alt="ICT Loket Logo">
+        <h1>ICT Loket Noordkade</h1>
+      </div>
+      <div class="nav-controls">
+       <nav>
+                        <ul>
+                         <li><a href="index.html">Home</a></li>
+                        
+                            <li><a href="FAQ.html" class="active">FAQ</a></li>
+                            
+                           <li><a href="Diensten.html">Diensten</a></li>
+                            <li><a href="contact.html" >Contact</a></li>
+                            <li><a href="over-ons.html">Over ons</a></li>
+                        </ul>
+                    </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <section class="hero">
+      <h2>Veelgestelde vragen</h2>
+      <p>Onderstaande vragen worden vaak gesteld. Staat uw vraag er niet bij? Gebruik dan de pagina 'Vragen' om contact op te nemen.</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Algemene vragen</h2>
+      <details>
+        <summary>Wat is ICT Loket Noordkade?</summary>
+        <div class="faq-answer">
+          <div class= "faq content">
+            <div class="faq-image">
+              <img src="Assets/ChatGPT Image 15 jan 2026, 12_26_12.png" alt="ICT Loket Logo">
+            </div>
+            <div class="faq-text">
+              <p>ICT Loket Noordkade is een lokaal ICT-bedrijf in Veghel dat gratis digitale hulp en betaalbare refurbished hardware aanbiedt, uitgevoerd door stagiairs onder begeleiding van professionals.</p>
+            </div>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <section class="section">
+      <div class="faq-item">
+        <div class="faq-question">Hoe maak ik een back-up van mijn bestanden?</div>
+        <div class="faq-answer">Gebruik een externe harde schijf of cloudservice (bijv. Google Drive). Kopieer belangrijke documenten en foto&apos;s regelmatig en bewaar meerdere versies.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Kunnen jullie mijn Windows installeren?</div>
+        <div class="faq-answer">Ja, wij helpen met installatie van Windows en uitleg over updates en drivers. Neem contact op voor beschikbare tijden en eventuele kosten.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Hoe kan ik hardware doneren?</div>
+        <div class="faq-answer">Ga naar de pagina 'Doneren' en vul het formulier in of breng de hardware naar Verlengde Noordkade 14, Veghel (1e verdieping, boven PLANK).</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Wat zijn de kosten?</div>
+        <div class="faq-answer">Basisvragen zijn gratis. Voor uitgebreid werk of onderdelen kunnen kosten in rekening worden gebracht. Vraag een offerte aan via Contact.</div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>📞 <a href="tel:+31689972359">06 - 89 97 23 59</a></p>
+        <p>📧 <a href="mailto:info@ictloketnoordkade.nl">info@ictloketnoordkade.nl</a></p>
+      </div>
+      <div class="footer-section">
+        <h3>Openingstijden</h3>
+        <ul>
+          <li>Sep-Feb: Ma-Di 09:30 - 17:00</li>
+          <li>Feb-Jun: Do-Vr 09:30 - 17:00</li>
+          <li>Niet open tijdens schoolvakanties</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 ICT Loket Noordkade</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(q=>{
+    q.addEventListener('click', ()=>{
+      const a = q.nextElementSibling;
+      a.style.display = (a.style.display==='block') ? 'none' : 'block';
+    });
+  });
+</script>
+</body>
+</html>
